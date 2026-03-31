@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="logo" href="./">Logo</a>
+
+          <nav class="nav">
+            <ul class="navigation">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#about">About</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Portfolio</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__inner">
+              <h1 class="hero__title">PYTHON DEVELOPER</h1>
+              <h2 class="hero__subtitle">john doe</h2>
+              <p class="hero__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
+                molestias, quo placeat quae dolorem sit molestiae at dolorum
+                deleniti reiciendis!
+              </p>
+
+              <ul class="hero-actions">
+                <li class="hero-actions__item">
+                  <a class="hero-actions__link" href="#">Download CV </a>
+                </li>
+                <li class="hero-actions__item">
+                  <a
+                    class="hero-actions__link hero-actions__link-secondary"
+                    href="#"
+                    >Learn More</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <img
+              class="hero__ava"
+              src="./img/avatar.jpg"
+              width="460"
+              height="460"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="about__title">ABOUT</h2>
+          <p class="about__subtitle">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+            dolores reiciendis aspernatur odit autem, dolore temporibus et
+            optio!
+          </p>
+
+          <div class="about__wrapper">
+            <div class="about__left">
+              <img src="/img/monitor.jpg" alt="about" class="monitor" />
+            </div>
+
+            <div class="about__right">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                architecto, tempore aspernatur animi esse omnis dolorem corrupti
+                quis in minima culpa.Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Qui architecto, tempore aspernatur animi esse
+                omnis dolorem corrupti quis in minima culpa.
+              </p>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                architecto, tempore aspernatur animi esse omnis dolorem corrupti
+                quis in minima culpa.Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Qui architecto, tempore aspernatur animi esse
+                omnis dolorem corrupti quis in minima culpa.
+              </p>
+              <a href="#" class="about__btn">Learn More</a>
+            </div>
+          </div>
+
+          <ul class="skills">
+            <li class="skills__item">
+              <div class="skills_round">
+                <img src="/img/html.svg" width="72" height="72" alt="HTML" />
+              </div>
+              <h3>HTML</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+            </li>
+
+            <li class="skills__item">
+              <div class="skills_round">
+                <img src="/img/css.svg" width="72" height="72" alt="CSS" />
+              </div>
+              <h3>CSS</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+            </li>
+            <li class="skills__item">
+              <div class="skills_round">
+                <img src="/img/sass.svg" width="72" height="72" alt="SASS" />
+              </div>
+              <h3>SASS</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+            </li>
+
+            <li class="skills__item">
+              <div class="skills_round">
+                <img
+                  src="/img/phython.svg"
+                  width="72"
+                  height="72"
+                  alt="PYTHON"
+                />
+              </div>
+              <h3>PYTHON</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
