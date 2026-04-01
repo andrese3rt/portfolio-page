@@ -123,6 +123,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 16px;
 }
 
 .about__left {
@@ -130,6 +131,7 @@
   flex-wrap: wrap;
   gap: 30px;
   flex: 0 0 560px;
+  border-radius: 16px;
 }
 
 .about__img {
@@ -191,4 +193,74 @@
 }
 .skills__item p {
   margin: 0;
+}
+.portfolio {
+  padding: 80px 0;
+  color: white;
+}
+
+.portfolio__title {
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-size: 48px;
+  color: #fff;
+}
+
+.portfolio__subtitle {
+  max-width: 500px;
+  margin-bottom: 64px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}
+.portfolio__list {
+  display: flex;
+  gap: 100px;
+  list-style: none;
+  padding: 0;
+}
+
+.portfolio__item {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 320px;
+}
+
+.portfolio__content {
+  padding: 20px;
+}
+
+.portfolio__card-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 5px;
+  color: #132238;
+}
+
+.portfolio__text {
+  color: #556070;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.portfolio__btn {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 12px 27px;
+  background-color: #27ae60;
+  font-weight: 500;
+  font-size: 14px;
+  border: 1px solid #aaa;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.4s ease-out;
+}
+.portfolio__btn:hover {
+  background-color: darkgreen;
 }
