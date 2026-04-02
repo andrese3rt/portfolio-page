@@ -3,6 +3,10 @@
 
 .header {
   padding: 32px 0;
+  position: sticky;
+  top: 0;
+  background: #27ae60;
+  padding: 25px;
 }
 
 .header__wrapper {
@@ -29,7 +33,20 @@
   color: #fff;
   transition: color 0.4s ease-out;
 }
-
+.navigation__link::before {
+  content: "";
+  margin-right: 8px;
+  display: inline-block;
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+.navigation__link:hover::before {
+  transform: scale(1);
+}
 .navigation__link:hover {
   color: lightgreen;
 }
@@ -99,6 +116,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.hero_image-wrapper::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: #34c759;
+  border-radius: 100%;
+  border: 2px solid white;
+  right: 200px;
+  bottom: 120px;
+}
+.hero_image-wrapper::before {
+  content: "#open_to_work 👨‍💻";
+  position: absolute;
+  font-weight: 500;
+  font-size: 14px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 160px;
+  height: 56px;
+  background-color: white;
+  bottom: 170px;
 }
 .about {
   color: white;
@@ -263,4 +307,75 @@
 }
 .portfolio__btn:hover {
   background-color: darkgreen;
+}
+.contacts {
+  padding: 80px 0;
+  color: white;
+}
+.contacts__items {
+  margin: 145px;
+}
+.contacts__title {
+  margin: 145px;
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+.contacts__subtitle {
+  margin: 73px;
+  max-width: 400px;
+  margin-top: 24px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+.contacts__list {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts__item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  margin-left: 145px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.contacts__item img {
+  width: 24px;
+  height: 24px;
+}
+.footer {
+  padding: 40px 0;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__social {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.footer__social img {
+  width: 40px;
+  height: 40px;
+  background: #28a745;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.footer__copy {
+  color: #e5e5ea;
+  font-size: 14px;
+  font-weight: 500;
 }
