@@ -126,8 +126,8 @@
   background-color: #34c759;
   border-radius: 100%;
   border: 2px solid white;
-  right: 200px;
-  bottom: 120px;
+  right: 295px;
+  bottom: 135px;
 }
 .hero_image-wrapper::before {
   content: "#open_to_work 👨‍💻";
