@@ -1,0 +1,39 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+.footer {
+  padding: 40px 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__social {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+  }
+
+  &__backround {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: $main-color;
+    border-radius: 50%;
+
+    & img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__copy {
+    color: $main-text;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

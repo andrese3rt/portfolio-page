@@ -1,0 +1,167 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+.hero {
+  padding: 36px 0;
+
+  @include desktop-screen {
+    padding: 72px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    @include tablet-screen {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__inner {
+    text-align: center;
+    @include tablet-screen {
+      text-align: left;
+    }
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    color: #828282;
+  }
+  &__subtitle {
+    margin-top: 17px;
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: $main-text;
+  }
+  &__description {
+    max-width: 560px;
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #828282;
+  }
+  &-actions {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include tablet-screen {
+      margin-top: 62px;
+      flex-direction: row;
+      justify-content: center;
+      justify-content: flex-start;
+    }
+
+    &__link {
+      padding: 12px 27px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "DM Sans", sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      color: $main-text;
+      background-color: $main-color;
+      border-radius: 8px;
+      transition: background-color 0.4s ease-out;
+    }
+    &__link-secondary {
+      background-color: transparent;
+      outline: 1px solid $main-text;
+    }
+    &__link:hover {
+      background-color: $background-hover;
+    }
+  }
+  &__ava {
+    margin-top: 24px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid $main-color;
+    padding: 15px;
+
+    @include tablet-screen {
+      width: 320px;
+      height: 320px;
+    }
+
+    @include desktop-screen {
+      margin-top: 0;
+      width: 450px;
+      height: 450px;
+    }
+  }
+  &_image-wrapper {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: relative;
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      background-color: $main-color;
+      border-radius: 100%;
+      border: 2px solid white;
+      left: 250px;
+      bottom: 56px;
+      animation: pulse 1s infinite ease-in-out;
+      @include mobile-screen {
+        left: 341px;
+        bottom: 56px;
+      }
+
+      @include tablet-screen {
+        left: 250px;
+      }
+      @include desktop-screen {
+        left: 340px;
+      }
+    }
+
+    &::before {
+      content: "#open_to_work 👨‍💻";
+      position: absolute;
+      font-weight: 500;
+      font-size: 14px;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      width: 140px;
+      height: 40px;
+      background-color: white;
+      bottom: 80px;
+
+      @include mobile-screen {
+        bottom: 110px;
+        width: 160px;
+        height: 56px;
+        left: 0;
+      }
+      @include tablet-screen {
+        top: 250px;
+        left: -50px;
+      }
+      @include desktop-screen {
+        top: 330px;
+        left: 1px;
+      }
+    }
+  }
+
+  @keyframes pulse {
+    from {
+      scale: 1;
+    }
+    to {
+      scale: 1.4;
+    }
+  }
+}

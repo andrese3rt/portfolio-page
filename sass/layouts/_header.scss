@@ -1,0 +1,63 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+.header {
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: $main-color;
+
+  @include tablet-screen {
+    padding: 32px 0;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    @include mobile-screen {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 36px;
+  color: $main-text;
+  text-transform: uppercase;
+}
+
+.navigation {
+  display: flex;
+  gap: 32px;
+
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    color: $main-text;
+    transition: color 0.4s ease-out;
+
+    &::before {
+      content: "";
+      margin-right: 8px;
+      display: inline-block;
+      background-color: white;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      transform: scale(0);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover {
+      color: $background-hover;
+    }
+
+    &:hover::before {
+      transform: scale(1);
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@use "./components/container";
+@use "./layouts/header";
+@use "./layouts/hero";
+@use "./layouts/about";
+@use "./layouts/portfolio";
+@use "./layouts/contacts";
+@use "./layouts/footer";
+@use "./utils/base";
+@use "./utils/mixins";
+@use "./utils/variables";

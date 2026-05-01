@@ -1,0 +1,19 @@
+@import "../utils/mixins";
+.container {
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include mobile-screen {
+    width: 480px;
+  }
+
+  @include tablet-screen {
+    width: 768px;
+  }
+
+  @include desktop-screen {
+    width: 1240px;
+  }
+}
